@@ -16,6 +16,10 @@ public class DogCreatorApplication {
     private static final Logger LOGGER = LoggerFactory.getLogger(DogCreatorApplication.class);
 
     @Autowired
+    private DogCreator creator1;
+    @Autowired
+    private DogCreator helloCreator;
+    @Autowired
     private DogCreator dogCreator;
 
     public static void main(String[] args) {
@@ -25,5 +29,8 @@ public class DogCreatorApplication {
     @PostConstruct
     public void afterInit() {
         LOGGER.info(dogCreator.createRandomDog().toString());
+        LOGGER.info(dogCreator.toString());
+        LOGGER.info(creator1.toString());
+        LOGGER.info(helloCreator.toString());
     }
 }
