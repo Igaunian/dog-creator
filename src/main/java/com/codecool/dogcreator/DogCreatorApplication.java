@@ -24,6 +24,6 @@ public class DogCreatorApplication {
 
     @PostConstruct
     public void afterInit() {
-        LOGGER.info(dogCreator.toString());
+        LOGGER.info(dogCreator.createRandomDog().toString());
     }
 }

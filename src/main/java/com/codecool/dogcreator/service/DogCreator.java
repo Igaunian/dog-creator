@@ -12,7 +12,7 @@ import java.util.Random;
 public class DogCreator {
     private static List<String> names = Arrays.asList("Joco", "Misi", "Fifi");
 
-    public Dog createRandom() {
+    public Dog createRandomDog() {
         Dog dog = new Dog();
         Random random = new Random();
 

@@ -12,4 +12,13 @@ public class Dog {
     private Breed breed;
     private String name;
     private Integer age;
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "breed=" + breed +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
